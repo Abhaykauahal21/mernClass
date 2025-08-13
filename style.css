@@ -29,4 +29,5 @@ tr{
 }
 th,td{
     border: 1px solid #000;
+    /* padding: px; */
 }
