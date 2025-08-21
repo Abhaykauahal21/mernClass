@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Types Demo</title>
+    <!-- External CSS link (assume styles.css exists for demo) -->
+    <link rel="stylesheet" href="/cssLernFile.css">
+    <style>
+        #internal{
+            background-color: pink;
+            border: 1px solid rgb(235, 47, 78);
+            border-radius: 20px;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <h1>CSS Styling Types Demo</h1>
+        <p>By Abhay Kaushal</p>
+    </header>
+    <nav >
+        <ul style="display: flex; text-align: center; justify-content: center; gap: 30px; list-style: none;">
+            <li><a href="#inline">Inline CSS</a></li>
+            <li><a href="#internal">Internal CSS</a></li>
+            <li><a href="#external">External CSS</a></li>
+            <li><a href="#selectors">Selectors</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="inline">
+           
+            <div class="card" style="background: #fffbe7; border: 1.5px solid #fbc02d; border-radius: 20px; padding: 20px;">
+                <h2>Inline CSS</h2>
+                <h3>Example</h3>
+                <p style="color: #fbc02d; font-weight: bold;">This paragraph uses <b>inline CSS</b> for color and font weight.</p>
+            </div>
+        </section> <br><br>
+        <section id="internal">
+            <h2>Internal CSS</h2>
+            <div class="ca">
+                <h3>Example</h3>
+                <p>This card and its text are styled using internal CSS in the &lt;style&gt; tag.</p>
+            </div>
+        </section> <br><br>
+        <section id="external">
+            
+            <div class="card">
+                <h2>External CSS</h2>
+                <h3>Example</h3>
+                <p style="color: #43a047; font-weight: bold;">This card would be styled by an external CSS file (see <b>styles.css</b>).</p>
+            </div>
+        </section> <br><br>
+        <section id="selectors">
+            <h2>Group & Descendant Selectors</h2>
+            <div class="card">
+                <h3>Group Selector</h3>
+                <p>h1, h2, h3 { color: #1976d2; }</p>
+            </div>
+            <br>
+            <div class="card">
+                <h3>Descendant Selector</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
