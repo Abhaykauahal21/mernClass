@@ -56,6 +56,7 @@ button {
   /* color: #333;
    */
    color: white;
+   text-decoration: white wavy underline;
 }
 
 .container {
@@ -63,3 +64,4 @@ button {
   flex-direction: column;
   align-items: center;
 }
+
